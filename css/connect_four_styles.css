@@ -1,0 +1,236 @@
+* {
+  background-color: #5B84B1FF;
+}
+
+body {
+  text-align: center;
+  font-family: "Courier", monospace;
+}
+
+/*
+ * The header has a different font than the rest of the page. It's the
+ * title, so it makes sense to make it a little different (and bigger).
+ */
+
+h1 {
+  margin: 0 auto;
+  font-family: "Courier", monospace;
+  font-size: 70px;
+  color: #FC766AFF;
+
+  margin: 2%;
+}
+
+/*
+ * The subheader (which let's us know whose turn it is) is a little smaller
+ * and less prominent.
+ */
+
+h2 {
+  font-size: 36px;
+  font-weight: lighter;
+  margin: 2%;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: lighter;
+  margin: 2%;
+}
+
+p {
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/*
+ * The container is a flex-box, which is a powerful layout tool. It grows
+ * dyanamically, and allows us to position our elements with precision.
+ */
+
+.container {
+  display: flex;                /* set our display property to use flex-box */
+  justify-content: center;      /* center container horizontally */
+  align-items: center;          /* center content vertically */
+}
+
+/*
+ * We want to display the subheader, board, and reset button in a single
+ * vertical column.
+ */
+
+.column {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;       /* align children in columns instead of rows */
+}
+
+/*
+ * This ensures that we get three rows of three squares, rather than a single
+ * row of nine squares.
+ */
+
+.wrap {
+  flex-wrap: wrap;              /* tells container to drop down once it reaches max-width */
+  height: 912px;
+  width: 1064px;
+}
+
+/*
+ * The square itself. We give it a specific size and border.
+ */
+
+ .square {
+   border: 1px solid #FC766AFF;
+   font-size: 30px;
+   font-weight: bold;
+   color: black;
+   height: 150px;
+   line-height: 150px;
+   user-select: none;
+   width: 150px;
+   background-color: lightgrey;
+   border-radius: 300px;
+ }
+
+/*
+ * And we give it a little flare when the user mouses over a square.
+ */
+
+.square:hover {
+  background-color: #FC766AFF;
+  cursor: pointer;
+}
+
+/*
+ * The reset button sits just below the board.
+ */
+
+
+
+.x {
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 32px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.o {
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 32px;
+  background-color: white
+  color: black;
+  cursor: pointer;
+}
+
+.input {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  border-color: black;
+  border-width: 3px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+.wins {
+  padding: 20px;
+  margin: 2%;
+}
+
+.home {
+  background-color: #FC766AFF;
+  border: 1px solid #FC766AFF;
+  color: #FC766AFF;
+  text-shadow: 3px;
+  font-size: 21px;
+  line-height: 40px;
+  margin: 1%;
+  text-align: center;
+  width: 300px;
+}
+#reset-button {
+  background-color: white;
+  border: 1px solid #FC766AFF;
+  color: #FC766AFF;
+  font-size: 21px;
+  line-height: 55px;
+  margin: 1%;
+  text-align: center;
+  width: 456px;
+}
+
+/*
+ * And a little flare when the user mouses over the button. The color scheme
+ * switches (background and foreground).
+ */
+
+#reset-button:hover {
+  background-color: #FC766AFF;
+  color: white;
+  cursor: pointer;
+}
+
+#x {
+  margin: 1%;
+  padding: 2px;
+}
+
+
+
+#reset-scoreboard {
+  background-color: white;
+  border: 1px solid #FC766AFF;
+  color: #FC766AFF;
+  font-size: 21px;
+  line-height: 55px;
+  margin: 1%;
+  text-align: center;
+  width: 456px;
+}
+
+#reset-scoreboard:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#table {
+  font-size: 36px;
+  font-weight: lighter;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
+  padding: 30px;
+}
+
+#t, #c, #ch {
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#t:hover, #c:hover, #ch:hover {
+  color: #FC766AFF;
+  font-size: 30px;
+}
+
+#h {
+  font-size: 20px;
+  text-align: center;
+}
+
+#h:hover {
+  color: #FC766AFF;
+  font-size: 30px;
+}

@@ -1,0 +1,172 @@
+* {
+  background-color: #5B84B1FF;
+}
+
+body {
+  text-align: center;
+  font-family: "Courier", monospace;
+}
+
+h1 {
+  margin: 0 auto;
+  font-family: "Courier", monospace;
+  font-size: 70px;
+  color: #FC766AFF;
+
+  margin: 2%;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: lighter;
+  margin: 2%;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: lighter;
+  margin: 2%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  height: 456px;
+  width: 456px;
+}
+
+ .square {
+   border: 1px solid #FC766AFF;
+   font-size: 96px;
+   color: #FC766AFF;
+   height: 150px;
+   line-height: 150px;
+   user-select: none;
+   width: 150px;
+ }
+
+.square:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.x {
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 32px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.o {
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 32px;
+  background-color: white
+  color: black;
+  cursor: pointer;
+}
+
+.input {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  border-color: black;
+  border-width: 3px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+.wins {
+  padding: 20px;
+  margin: 2%;
+}
+
+#reset-button {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-size: 21px;
+  line-height: 55px;
+  margin: 1%;
+  text-align: center;
+  width: 456px;
+}
+
+#reset-button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#x {
+  margin: 1%;
+  padding: 2px;
+}
+
+
+
+#reset-scoreboard {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-size: 21px;
+  line-height: 55px;
+  margin: 1%;
+  text-align: center;
+  width: 456px;
+}
+
+#reset-scoreboard:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#table {
+  font-size: 36px;
+  font-weight: lighter;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
+  padding: 30px;
+}
+
+#t, #c, #ch {
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#t:hover, #c:hover, #ch:hover {
+  color: #FC766AFF;
+  font-size: 30px;
+}
+
+#h {
+  font-size: 20px;
+  text-align: center;
+}
+
+#h:hover {
+  color: #FC766AFF;
+  font-size: 30px;
+}

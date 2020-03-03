@@ -1,0 +1,63 @@
+#current {
+  float: center;
+  color: purple;
+  font-weight: bold;
+  font-family: "Courier", monospace;
+  font-size: 24px;
+}
+
+* {
+  background-color: #5B84B1FF;
+}
+
+body {
+  text-align: center;
+  font-family: "Courier", monospace;
+}
+
+/*
+ * The header has a different font than the rest of the page. It's the
+ * title, so it makes sense to make it a little different (and bigger).
+ */
+
+h1 {
+  margin: 0 auto;
+  font-family: "Courier", monospace;
+  font-size: 70px;
+  color: #FC766AFF;
+
+  margin: 2%;
+}
+
+/*
+ * The subheader (which let's us know whose turn it is) is a little smaller
+ * and less prominent.
+ */
+
+h2 {
+  font-size: 36px;
+  font-weight: lighter;
+  margin: 2%;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: lighter;
+  margin: 2%;
+}
+
+p {
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+canvas {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 4px solid #FC766AFF;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
